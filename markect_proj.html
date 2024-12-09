@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="market_css.css">
+    <style>
+        *{
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/abstract-colorful-shapes-background_23-2148769632.jpg?w=1060&t=st=1707525222~exp=1707525822~hmac=0f6eff93a6d062864521354b372527b977993754f537de124ac2ed18cecac7f1");
+     background-size: cover;
+     backdrop-filter: blur(18px);
+     -webkit-backdrop-filter: blur(1px);
+     position:absolute;
+}
+
+.marquee {
+      width: 100%;
+      border: 2px solid rgb(202, 202, 202,.2);
+      background:rgba(255,255,255,.1) ;
+      box-shadow: 0 25px 45px rgb(0, 0, 0,.2);
+      backdrop-filter: blur(10px);
+      padding: 10px;
+      margin-top: 20px;
+      border-radius:45px;
+      font-size: xx-large;
+      color: rgb(217, 255, 0);
+     
+      margin-right: -300px;
+      
+    }
+
+    .marquee span {
+      display: inline-block;
+      animation: marquee 5s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(70vw);
+      }
+      100% {
+        transform: translateX(80%);
+      }
+    }
+form
+ {
+    border: 2px solid rgb(202, 202, 202,.2);
+      background:rgba(255,255,255,.1) ;
+      box-shadow: 0 25px 45px rgb(0, 0, 0,.5);
+      backdrop-filter: blur(12px);
+    padding: 20px;
+    margin-left: 30px;
+    width: 450px;
+    margin-top: 100px;
+    border-radius: 31px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    margin-left: 70px;
+    float: left;
+}
+.input1{
+    background: transparent;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius:60px;
+    width: 60%;
+    font-size: medium;
+    color: whitesmoke;
+}
+#submit {
+    background-color: #9eff4f;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 20%;
+    border-radius: 23%;
+    font-size: medium;
+}
+#submit:hover {
+    background-color: #2fea38;
+}
+#h2{
+    text-align: center;
+    color: rgba(208, 255, 0, 0.77);
+    margin-bottom: 25px;
+    font-size: x-large;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bill{
+  border: 3px solid rgba(14, 255, 167, 0.6);
+  background:rgba(202, 251, 55, 0.4) ;
+  box-shadow: 10px 25px 45px rgb(0, 0, 0,0.5);
+  backdrop-filter: blur(12px);
+  border-radius: 60px;
+  float: right;
+  padding-right: 200px;
+  margin: 100px;
+  margin-right: 150px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+#h21{
+  margin-top: 0px;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 100px;
+  color: rgb(0, 93, 233);
+  font-size: x-large;
+
+  
+}
+.billing{
+  margin-left: 50px;
+}
+.receipt1{
+  
+  border: 3px solid rgba(14, 255, 167, 0.3);
+  background:rgba(171, 157, 157, 0.4) ;
+  box-shadow: 0 25px 45px rgb(0, 0, 0,.5);
+  backdrop-filter: blur(12px);
+  border-radius: 60px;
+  float: right;
+  padding-right: 200px;
+  margin-top: -70px;
+  margin-right: 250px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  
+}
+.receipt{
+   margin-left: 50px;
+}
+ol{
+  font-size: large;
+}
+    </style>
+</head>
+<body>
+    <div class="marquee">
+
+<span class="heading">SUPER MARKET BILLING SYSTEM</span></div>
+
+
+<form id="product_inp">
+    <ol>
+    <div id="h2">Product  Details</div>
+    <li><label for="productId">Product ID:</label>
+    <input type="text" id="productId" name="productId" placeholder="ENTER Product ID " class="input1"><br><br>
+
+    <li><label for="productName">Product Name:</label>
+    <input type="text" id="productName" name="productName" placeholder="ENTER Product Name" class="input1"><br><br>
+
+    <li><label for="productquantity">Product Quantity:</label>
+    <input type="text" id="productquantity" name="productquantity"  placeholder="ENTER Product Quantity" class="input1"><br><br></li>
+    
+    <li><label for="productPrice">Product Price:</label>
+    <input type="text" id="productPrice" name="productPrice"  placeholder="ENTERP Price" class="input1"><br><br></li>
+   </ol>
+  <div class="cust">
+   <div id="h2">Customer Details</div>
+   <ol >
+    
+    <li><label for="customerId">Customer ID:</label>
+    <input type="text" id="customerId" name="customerId" class="input1" placeholder="ENTER customer Id"><br><br>
+    
+    <li><label for="customerName">Customer Name:</label> 
+    <input type="text" id="customerName" name="customerName" class="input1" placeholder="ENTER customer Name"><br><br>
+    
+    <li><label for="phoneNumber">Phone Number:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber" class="input1" placeholder="ENTER phone Number"><br><br>
+    
+    <li><label for="email">Email:</label>
+    <input type="text" id="email" name="email" class="input1" placeholder="ENTER customer Email Address"><br><br>
+    </ol>
+    <center><input type="submit" value="Submit" id="submit"></center>
+</div>
+</form>
+    <!--bill process-->
+    <div class="bill" >
+        <h2 id="h21"><center>CHECK OUT DETAILS</center></h2>
+        <div class="billing">
+
+        </div>
+    </div>
+    <!--receipt-->
+    <div class="receipt1">
+        <h2 id="h21"><center>RECEIPT</center></h2>
+        <div class="receipt">
+
+        </div>
+    </div>
+    <script>
+          
+
+            document.getElementById("product_inp").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Retrieve input values
+            var productId = document.getElementById("productId").value;
+            
+            var productName = document.getElementById("productName").value;
+            var productquantity = document.getElementById("productquantity").value;
+            var productPrice = document.getElementById("productPrice").value;
+            var customerId = document.getElementById("customerId").value;
+            var customerName = document.getElementById("customerName").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var email = document.getElementById("email").value;
+
+            // Display input values in billing container
+            var billingContainer = document.querySelector(".billing");
+            billingContainer.style.fontSize="larger";
+            billingContainer.innerHTML = "<h1>Billing Details:</h1>" +
+                "<p><strong>Product ID:   </strong>"+"" + productId + "</p>" +
+                "<p><strong>Product Name:</strong> " + productName + "</p>" +
+                "<p><strong>Product Price:</strong> " + productPrice + "</p>" +
+                "<p><strong>Product Quantity:</strong> " + productquantity + "</p>" +
+                "<p><strong>Customer ID:</strong> " + customerId + "</p>" +
+                "<p><strong>Customer Name:</strong> " + customerName + "</p>" +
+                "<p><strong>Phone Number:</strong> " + phoneNumber + "</p>" +
+                "<p><strong>Email:</strong> " + email + "</p>";
+                
+                
+        });
+            
+        
+        //print recipt
+        document.getElementById("product_inp").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            
+            var productId = document.getElementById("productId").value;
+            var productName = document.getElementById("productName").value;
+            var productQuantity = parseInt(document.getElementById("productquantity").value);
+            var productPrice = parseInt(document.getElementById("productPrice").value);
+            var customerId = document.getElementById("customerId").value;
+            var customerName = document.getElementById("customerName").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+            var email = document.getElementById("email").value;
+            //total price without discount
+            let total_price=productPrice*productQuantity;
+            let t=parseInt(total_price); 
+            
+            //calculate discount
+             let discount = 0;
+             if (t >= 1000 && t < 2000) {
+                 discount = (t * 10)/100; // 10%
+                 dis=(discount/t)*100;
+             } else if (t >= 2000 && t < 14000) {
+                 discount = (t * 15)/100;
+                 dis=(discount/t)*100; // 15%
+             } else if (t >= 14000 && t <= 25000) {
+                 discount = (t * 20)/100; 
+                 dis=(discount/t)*100;// 20%
+             }else if (t >= 25000 && t <= 45000) {
+                 discount = (t * 25)/100;
+                 dis=(discount/t)*100; // 25%
+             }else if (t >= 45000 && t <= 100000) {
+                 discount = (t * 30)/100;
+                 dis=(discount/t)*100; // 30%
+             }
+             else{
+                
+             }
+             //GST
+             var GST=99;
+             //grand total
+             var g_total=(t-discount)+GST;
+
+
+            // Display input values in receipt container
+            var receiptContainer = document.querySelector(".receipt");
+            receiptContainer.style.fontSize="larger";
+            receiptContainer.style.color="black"
+            receiptContainer.innerHTML = "<h1>Receipt:</h1>" +
+                "<p><strong>Product ID:</strong> " + productId + "</p>" +
+                "<p><strong>Product Name:</strong> " + productName + "</p>" +
+                "<p><strong>Product Quantity:</strong> " + productQuantity + "</p>" +
+                "<p><strong>Product Price:</strong> " + productPrice + "</p>" +
+                "<p><strong>Customer ID:</strong> " + customerId + "</p>" +
+                "<p><strong>Customer Name:</strong> " + customerName + "</p>" +
+                "<p><strong>Phone Number:</strong> " + phoneNumber + "</p>" +
+                "<p><strong>Total Price:</strong> " + total_price  +"₹"+"</p>"+
+                "<p><strong>Discount:</strong> " + discount +"₹"+ "</p>"+
+                "<p><strong>Discount in %:</strong> " + dis +"%"+ "</p>"+
+                "<p><strong>GST:</strong> " + GST +"₹"+ "</p>"+
+                "<p><strong>Grand Total:</strong> " + g_total +"₹"+ "</p>"
+        });
+        
+    </script>
+</body>
+</html>
