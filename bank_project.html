@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="bank2.css">
+
+
+</head>
+<body>
+
+<div class="navbar">     
+    <div id="logo"><i class="ri-bank-fill"></i>SBI BANK</div> 
+    <nav class="right">
+        <a href="#home"><i class="ri-home-line"></i>Home</a>
+        <a href="#about"><i class="ri-information-line"></i>About</a>
+        <a href="#Help"><i class="ri-questionnaire-line"></i>Help</a>
+        <button class="login" id="loginbtn">Login</button>
+        <button class="btn" id="registerbtn">Register</button>
+    </nav>
+</div>
+<section class="content">
+    <div class="text">
+        <h1>HELLO WELCOME</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus numquam quisquam delectus totam quia eos voluptate eum consectetur? Sit cupiditate voluptate dolorum a hic vitae rerum ea doloribus accusamus?</p>
+        <span class="btn-box">
+        <button class="buttn">Start</button>
+        <button class="buttn">Contact US</button></span>
+    </div>
+    <img src="bank.jpg" alt="">
+</section>
+
+<div id="loginForm" class="login-form">
+    <span id="closeBtn" class="close-btn">&times;</span>
+    <div class="form-header">
+        <h2>Login</h2>
+        
+    </div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">submit</button>
+    </form>
+    <div class="form-footer">
+        <a href="#">Forgot Password?</a>
+        <a href="#" id="registerbtn">Register</a>
+    </div>
+</div>
+<!--registeration form-->
+<div id="Registerfrom" class="Register-form">
+    <div class="formheader">
+        <h2>Registeration form</h2>
+        <span id="closebtn" class="close_btn">&times;</span>
+    </div>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">DOB:</label>
+        <input type="text" id="dob" name="DOB" required>        
+        <label for="aadhar">Aadhar:</label>
+        <input type="text" id="Aadhar" name="Aadhar" required>        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div class="form_footer">
+        <a href="#">Forgot Password?</a>
+        <a href="#">Login</a>
+    </div>
+</div>
+
+<script src="bank.js"></script>
+</body>
+</html>
